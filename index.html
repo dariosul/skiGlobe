@@ -1,13 +1,29 @@
 <html>
     <head>
-        <!-- Libraries -->
+        <!-- Start libraries -->
         <script charset="utf-8" src="vendor/d3js-3.5.17/d3.min.js"></script>
         <script charset="utf-8" src="vendor/topojson-1.6.26/topojson.min.js"></script>
         <script charset="utf-8" src="vendor/planetaryjs-1.1.2/planetaryjs.min.js"></script>
+
+        <!-- jquery is a dependency of bootstrap js -->
+        <script charset="utf-8" src="vendor/jquery-1.12.4/jquery.min.js"></script>
+
+        <link href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+        <script charset="utf-8" src="vendor/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+        <!-- End libraries -->
     </head>
 
     <body>
-        <canvas id='globe' width='500' height='500'></canvas>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>SkiGlobe</h1>
+
+                <p>Soon this map will show locations to ski</p>
+
+                <canvas id='globe' width='500' height='500'></canvas>
+            </div>
+        </div>
+
         <script src="index.js"></script>
     </body>
 </html>
